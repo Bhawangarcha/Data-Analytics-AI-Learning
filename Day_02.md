@@ -448,7 +448,6 @@ python
 ---
 
 ### Example Program
-
 name = input("Enter name: ")
 print("Hello " + name)
 print("Length:", len(name))
