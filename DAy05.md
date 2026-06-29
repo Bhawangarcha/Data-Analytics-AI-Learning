@@ -1,6 +1,6 @@
-#Python Dictionary 
+# Python Dictionary 
 
-###What is a Dictionary?
+### What is a Dictionary?
 A dictionary is a built-in data structure in Python that is used to store a collection of data in the form of key-value pairs.
 Each item in a dictionary has two parts:
 - Key → A unique identifier
@@ -280,65 +280,58 @@ for x in student.keys():
 name
 age
 
-
 ---
 
-values()
+### values()
 
 Returns all values.
 
 for x in student.values():
     print(x)
 
-Output:
+### Output:
 
 Tom
 20
 
-
 ---
 
-items()
+### items()
 
 Returns key-value pairs.
 
 for key,value in student.items():
     print(key,value)
 
-Output:
+### Output:
 
 name Tom
 age 20
 
-
 ---
 
-update()
+### update()
 
 Used to combine dictionaries.
 
-Example:
+### Example:
 
 a = {
 "name":"Tom"
 }
-
 b = {
 "age":20
 }
-
 a.update(b)
-
 print(a)
 
-Output:
+### Output:
 
 {'name':'Tom','age':20}
 
-
 ---
 
-copy()
+### copy()
 
 Creates a copy of dictionary.
 
@@ -349,7 +342,7 @@ Changes in the copy do not affect original dictionary.
 
 ---
 
-Dictionary Looping
+### Dictionary Looping
 
 Loop through Keys
 
@@ -357,10 +350,8 @@ student = {
 "name":"Tom",
 "age":20
 }
-
 for x in student:
     print(x)
-
 
 ---
 
@@ -377,61 +368,39 @@ Loop through Key and Value
 for k,v in student.items():
     print(k,v)
 
-
 ---
 
-Nested Dictionary
+### Nested Dictionary
 
 A dictionary inside another dictionary is called a nested dictionary.
 
 Example:
 
 students = {
-
 "student1":{
-
 "name":"Tom",
 "marks":90
-
 },
-
 "student2":{
-
 "name":"Alex",
 "marks":85
-
+}
 }
 
-}
-
-Access:
+- Access:
 
 print(students["student1"]["marks"])
 
-Output:
+### Output:
 
 90
 
-
 ---
 
-Difference Between Dictionary and List
 
-Dictionary	List
+### Real-Life Examples of Dictionary
 
-Stores key-value pairs	Stores values only
-Uses keys for access	Uses index for access
-Keys must be unique	Index can repeat values
-Mutable	Mutable
-Faster searching by key	Searching requires index
-
-
-
----
-
-Real-Life Examples of Dictionary
-
-Student Record
+- Student Record
 
 student = {
 "name":"Rahul",
@@ -439,7 +408,7 @@ student = {
 "marks":95
 }
 
-Employee Data
+- Employee Data
 
 employee = {
 "id":1,
@@ -447,7 +416,7 @@ employee = {
 "salary":50000
 }
 
-Product Details
+- Product Details
 
 product = {
 "name":"Laptop",
@@ -458,22 +427,16 @@ product = {
 
 ---
 
-Advantages of Dictionary
+### Advantages of Dictionary
 
-Fast data retrieval
-
-Easy to update data
-
-Stores related information together
-
-Flexible structure
-
-Supports nested data
-
-
+- Fast data retrieval
+- Easy to update data
+- Stores related information together
+- Flexible structure
+- Supports nested data
 
 ---
 
-Summary
+### Summary
 
 A Python dictionary is a mutable, unordered (logically ordered from Python 3.7+) collection of key-value pairs used to store and manage data efficiently. It provides methods like keys(), values(), items(), get(), and update() to work with data easily.
