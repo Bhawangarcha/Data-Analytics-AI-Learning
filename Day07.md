@@ -1,6 +1,6 @@
-#NumPy (Numerical Python) – Complete Notes with Theory
+# NumPy (Numerical Python)
 
-##What is NumPy?
+## What is NumPy?
 
 NumPy (Numerical Python) is an open-source Python library used for performing fast numerical computations and working with multi-dimensional arrays. It is one of the most important libraries in Python for scientific computing.
 NumPy provides a powerful N-dimensional array object (ndarray) and a large collection of mathematical functions to perform operations on these arrays efficiently.
