@@ -228,9 +228,7 @@ These operations are called vectorized operations, making NumPy very fast.
 
 ---
 
-5. Mathematical Functions
-
-Theory
+### 5. Mathematical Functions
 
 NumPy contains many built-in mathematical functions.
 
@@ -242,7 +240,7 @@ print(np.mean(arr))
 print(np.max(arr))
 print(np.min(arr))
 
-Output
+### Output
 
 [1. 2. 3.]
 14
@@ -250,25 +248,9 @@ Output
 9
 1
 
-Explanation
-
-sqrt() → Finds square root
-
-sum() → Adds all elements
-
-mean() → Finds average
-
-max() → Largest element
-
-min() → Smallest element
-
-
-
 ---
 
-6. Indexing and Slicing
-
-Theory
+### 6. Indexing and Slicing
 
 Indexing is used to access individual elements.
 
@@ -279,7 +261,7 @@ arr = np.array([10,20,30,40])
 print(arr[0])
 print(arr[-1])
 
-Output
+### Output
 
 10
 40
@@ -289,11 +271,11 @@ Negative indexing starts from the end.
 
 ---
 
-Slicing
+### Slicing
 
 print(arr[1:3])
 
-Output
+### Output
 
 [20 30]
 
@@ -303,12 +285,9 @@ array[start:end]
 
 The ending index is not included.
 
-
 ---
 
-7. Reshaping Arrays
-
-Theory
+### 7. Reshaping Arrays
 
 Reshaping changes the structure of an array without changing its data.
 
@@ -318,19 +297,16 @@ new_arr = arr.reshape(2,3)
 
 print(new_arr)
 
-Output
+### Output
 
 [[1 2 3]
  [4 5 6]]
 
 The total number of elements must remain the same.
 
-
 ---
 
-8. Iterating Through Arrays
-
-Theory
+### 8. Iterating Through Arrays
 
 Arrays can be traversed using loops.
 
@@ -339,7 +315,7 @@ arr = np.array([1,2,3])
 for x in arr:
     print(x)
 
-Output
+### Output
 
 1
 2
@@ -347,14 +323,11 @@ Output
 
 Each iteration accesses one element of the array.
 
-
 ---
 
-9. Copy vs View
+### 9. Copy vs View
 
 Copy
-
-Theory
 
 A copy creates a completely separate array.
 
@@ -369,17 +342,14 @@ arr[0] = 10
 print(arr)
 print(x)
 
-Output
+### Output
 
 [10 2 3]
 [1 2 3]
 
-
 ---
 
-View
-
-Theory
+### View
 
 A view shares the same memory as the original array.
 
@@ -394,17 +364,14 @@ arr[0] = 10
 print(arr)
 print(y)
 
-Output
+### Output
 
 [10 2 3]
 [10 2 3]
-
 
 ---
 
-10. Joining Arrays
-
-Theory
+### 10. Joining Arrays
 
 Joining combines two or more arrays into one array.
 
@@ -413,16 +380,13 @@ b = np.array([3,4])
 
 print(np.concatenate((a,b)))
 
-Output
+### Output
 
 [1 2 3 4]
 
-
 ---
 
-11. Sorting Arrays
-
-Theory
+### 11. Sorting Arrays
 
 Sorting arranges array elements in ascending order.
 
@@ -430,16 +394,13 @@ arr = np.array([3,1,2])
 
 print(np.sort(arr))
 
-Output
+### Output
 
 [1 2 3]
 
-
 ---
 
-12. Random Numbers
-
-Theory
+### 12. Random Numbers
 
 NumPy provides a random module to generate random numbers.
 
@@ -447,18 +408,15 @@ random_arr = np.random.randint(1,10,5)
 
 print(random_arr)
 
-Example Output
+### Output
 
 [3 7 1 9 5]
 
 Each execution gives different values.
 
-
 ---
 
-13. Boolean Filtering
-
-Theory
+### 13. Boolean Filtering
 
 Boolean filtering selects only those elements that satisfy a condition.
 
@@ -466,15 +424,14 @@ arr = np.array([1,2,3,4,5])
 
 print(arr[arr>2])
 
-Output
+### Output
 
 [3 4 5]
 
 Only elements greater than 2 are returned.
 
-
 ---
 
-Summary
+### Summary
 
 NumPy is one of the most important Python libraries for numerical computing. It provides efficient multidimensional arrays, fast mathematical operations, array manipulation, random number generation, sorting, filtering, reshaping, and statistical functions. Because of its speed, memory efficiency, and extensive functionality, NumPy serves as the foundation for many advanced fields such as Data Science, Machine Learning, Artificial Intelligence, Image Processing, and Scientific Computing. Mastering NumPy is an essential step toward learning these technologies effectively.
