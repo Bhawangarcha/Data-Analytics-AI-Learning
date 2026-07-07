@@ -117,7 +117,7 @@ print(rest)
 
 ---
 
-8. Combine two lists into a dictionary
+### 8. Combine Two Lists into a Dictionary
 
 keys = ['a', 'b']
 values = [1, 2]
@@ -126,10 +126,13 @@ d = dict(zip(keys, values))
 
 print(d)
 
+### Output
+
+{'a': 1, 'b': 2}
 
 ---
 
-16. Convert tuple into dictionary
+### 9. Convert Tuple into Dictionary
 
 t = ('a', 1, 'b', 2)
 
@@ -140,10 +143,13 @@ for i in range(0, len(t), 2):
 
 print(d)
 
+### Output
+
+{'a': 1, 'b': 2}
 
 ---
 
-17. Set operations
+### 10. Set Operations
 
 A = {1, 2, 3}
 B = {2, 3, 4}
@@ -153,10 +159,16 @@ print("Intersection:", A & B)
 print("Difference:", A - B)
 print("Symmetric Difference:", A ^ B)
 
+### Output
+
+Union: {1, 2, 3, 4}
+Intersection: {2, 3}
+Difference: {1}
+Symmetric Difference: {1, 4}
 
 ---
 
-18. Student with highest marks
+### 11. Student with Highest Marks
 
 students = {
     "A": 80,
@@ -170,10 +182,13 @@ name = max(students, key=students.get)
 
 print(name, students[name])
 
+### Output
+
+B 92
 
 ---
 
-19. Rotate list left by n positions
+### 12. Rotate List Left by n Positions
 
 lst = [1, 2, 3, 4, 5]
 n = 2
@@ -182,10 +197,13 @@ result = lst[n:] + lst[:n]
 
 print(result)
 
+### Output
+
+[3, 4, 5, 1, 2]
 
 ---
 
-20. Lowest marks in nested dictionary
+###13. Lowest Marks in Nested Dictionary
 
 students = {
     1: {"name": "A", "marks": 70},
@@ -197,10 +215,13 @@ lowest = min(students.values(), key=lambda x: x["marks"])
 
 print(lowest["name"])
 
+### Output
+
+B
 
 ---
 
-21. Maximum and minimum first element
+### 14. Maximum and Minimum First Element
 
 t = ((3, 'c'), (1, 'a'), (5, 'e'))
 
@@ -210,10 +231,14 @@ minimum = min(t)
 print("Maximum:", maximum)
 print("Minimum:", minimum)
 
+### Output
+
+Maximum: (5, 'e')
+Minimum: (1, 'a')
 
 ---
 
-22. Second largest and second smallest
+### 15. Second Largest and Second Smallest
 
 lst = [5, 1, 9, 9, 3]
 
@@ -222,10 +247,14 @@ unique = sorted(set(lst))
 print("Second Smallest =", unique[1])
 print("Second Largest =", unique[-2])
 
+### Output
+
+Second Smallest = 3
+Second Largest = 5
 
 ---
 
-32. Unique characters from two strings
+### 15. Unique Characters from Two Strings
 
 s1 = "hello"
 s2 = "world"
@@ -234,10 +263,13 @@ result = set(s1) | set(s2)
 
 print(result)
 
+### Output
+
+{'h', 'e', 'l', 'o', 'w', 'r', 'd'}
 
 ---
 
-33. Sort list of tuples by marks
+### 16. Sort List of Tuples by Marks
 
 students = [('A', 70), ('B', 90), ('C', 60)]
 
@@ -245,10 +277,13 @@ result = sorted(students, key=lambda x: x[1], reverse=True)
 
 print(result)
 
+### Output
+
+[('B', 90), ('A', 70), ('C', 60)]
 
 ---
 
-34. Merge two dictionaries
+### 17. Merge Two Dictionaries
 
 d1 = {'a': 1, 'b': 2}
 d2 = {'b': 3, 'c': 4}
@@ -260,10 +295,13 @@ for key, value in d2.items():
 
 print(result)
 
+### Output
+
+{'a': 1, 'b': 5, 'c': 4}
 
 ---
 
-35. Demonstrate tuple immutability
+### 18. Demonstrate Tuple Immutability
 
 t = (1, 2, 3)
 
@@ -272,10 +310,11 @@ try:
 except TypeError:
     print("Error: tuples do not support item assignment")
 
+### Output
 
 ---
 
-36. Find pairs whose sum equals k
+### 19. Find Pairs Whose Sum Equals k
 
 s = {1, 2, 3, 4, 5}
 k = 6
@@ -287,10 +326,15 @@ for num in s:
         print((num, k - num))
     visited.add(num)
 
+### Output
+
+(2, 4)
+(1, 5)
+(3, 3)
 
 ---
 
-37. Sum of diagonal elements
+### 20. Sum of Diagonal Elements
 
 matrix = (
     (1, 2, 3),
@@ -305,14 +349,13 @@ for i in range(len(matrix)):
 
 print("Diagonal Sum =", total)
 
-Output
+### Output
 
 Diagonal Sum = 15
 
-
 ---
 
-38. Swap keys and values
+### 21. Swap Keys and Values
 
 d = {'a': 1, 'b': 2}
 
@@ -323,8 +366,6 @@ for key, value in d.items():
 
 print(new_dict)
 
-Output
+### Output
 
 {1: 'a', 2: 'b'}
-
-These solutions use fundamental Python concepts such as lists, tuples, sets, dictionaries, loops, conditions, zip(), sorted(), max(), min(), lambda functions, and exception handling, making them suitable for lab practicals and examinations.
