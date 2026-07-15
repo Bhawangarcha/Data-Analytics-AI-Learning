@@ -203,7 +203,7 @@ print(result)
 
 ---
 
-###13. Lowest Marks in Nested Dictionary
+### 13. Lowest Marks in Nested Dictionary
 
 students = {
     1: {"name": "A", "marks": 70},
@@ -254,7 +254,7 @@ Second Largest = 5
 
 ---
 
-### 15. Unique Characters from Two Strings
+### 16. Unique Characters from Two Strings
 
 s1 = "hello"
 s2 = "world"
@@ -269,7 +269,7 @@ print(result)
 
 ---
 
-### 16. Sort List of Tuples by Marks
+### 17. Sort List of Tuples by Marks
 
 students = [('A', 70), ('B', 90), ('C', 60)]
 
@@ -283,7 +283,7 @@ print(result)
 
 ---
 
-### 17. Merge Two Dictionaries
+### 18. Merge Two Dictionaries
 
 d1 = {'a': 1, 'b': 2}
 d2 = {'b': 3, 'c': 4}
@@ -301,7 +301,7 @@ print(result)
 
 ---
 
-### 18. Demonstrate Tuple Immutability
+### 19. Demonstrate Tuple Immutability
 
 t = (1, 2, 3)
 
@@ -314,7 +314,7 @@ except TypeError:
 
 ---
 
-### 19. Find Pairs Whose Sum Equals k
+### 20. Find Pairs Whose Sum Equals k
 
 s = {1, 2, 3, 4, 5}
 k = 6
@@ -334,7 +334,7 @@ for num in s:
 
 ---
 
-### 20. Sum of Diagonal Elements
+### 21. Sum of Diagonal Elements
 
 matrix = (
     (1, 2, 3),
@@ -355,7 +355,7 @@ Diagonal Sum = 15
 
 ---
 
-### 21. Swap Keys and Values
+### 22. Swap Keys and Values
 
 d = {'a': 1, 'b': 2}
 
