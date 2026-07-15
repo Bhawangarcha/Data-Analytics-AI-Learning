@@ -1,0 +1,241 @@
+# Pandas 
+
+### What is Pandas?
+
+Pandas is an open-source Python library developed for data analysis and data manipulation. It provides fast, flexible, and easy-to-use data structures that help users work with structured data such as tables, spreadsheets, and databases.
+Pandas is widely used in Data Science, Machine Learning, Artificial Intelligence, Data Analytics, Finance, Business Intelligence, and Research because it makes handling large datasets simple and efficient.
+Pandas is built on top of the NumPy library, which makes numerical computations faster.
+
+---
+
+### Features of Pandas
+
+- Easy to read and write data from CSV, Excel, JSON, SQL, etc.
+- Provides powerful data analysis tools.
+- Handles missing (null) values efficiently.
+- Supports filtering, sorting, grouping, and merging data.
+- Performs statistical operations easily.
+- Integrates well with NumPy, Matplotlib, and Scikit-learn.
+- Efficient for handling large datasets.
+
+---
+
+### Applications of Pandas
+
+- Data Cleaning
+- Data Analysis
+- Data Manipulation
+- Business Reports
+- Financial Analysis
+- Machine Learning Data Preparation
+- Scientific Research
+- Sales and Customer Data Analysis
+
+---
+
+### Basic Import
+
+import pandas as pd
+
+---
+
+### Series
+
+A Series is a one-dimensional labeled array capable of holding data of any type such as integers, strings, floats, or objects. Each value has an index.
+
+### Syntax
+
+import pandas as pd
+
+s = pd.Series([10, 20, 30])
+print(s)
+
+### Output
+
+0    10
+1    20
+2    30
+dtype: int64
+
+---
+
+### DataFrame
+
+A DataFrame is a two-dimensional data structure consisting of rows and columns. It is similar to an Excel spreadsheet or a SQL table. Different columns can contain different types of data.
+
+### Example
+
+import pandas as pd
+
+data = {
+    "Name": ["Ali", "Sara", "John"],
+    "Age": [20, 21, 19]
+}
+df = pd.DataFrame(data)
+print(df)
+
+### Output
+
+Name  Age
+0   Ali   20
+1  Sara   21
+2  John   19
+
+---
+
+### Reading Files
+
+Pandas can read data from different file formats.
+
+- Read CSV File
+
+df = pd.read_csv("data.csv")
+
+Read Excel File
+
+df = pd.read_excel("data.xlsx")
+
+---
+
+### Viewing Data
+
+These functions help understand the dataset.
+
+- First 5 Rows
+df.head()
+
+- Last 5 Rows
+df.tail()
+
+- Shape of Dataset
+df.shape
+
+- Column Names
+df.columns
+
+- Information about Dataset
+df.info()
+
+- Statistical Summary
+df.describe()
+
+---
+
+### Selecting Data
+
+- Select Single Column
+
+df["Name"]
+
+- Select Multiple Columns
+
+df[["Name", "Age"]]
+
+- Select Row
+
+df.loc[0]
+
+---
+
+### Filtering Data
+
+Filtering is used to display only the records that satisfy a condition.
+
+df[df["Age"] > 20]
+
+---
+
+### Adding a New Column
+
+New columns can be added easily.
+
+df["Marks"] = [90, 85, 88]
+
+---
+
+### Updating Data
+
+Values can be modified using loc.
+
+df.loc[0, "Age"] = 22
+
+---
+
+### Deleting a Column
+
+Columns can be removed using drop().
+
+df.drop("Marks", axis=1, inplace=True)
+
+
+---
+
+### Handling Missing Values
+
+Missing values are common in datasets. Pandas provides methods to detect and handle them.
+
+- Check Missing Values
+
+df.isnull()
+
+- Remove Missing Values
+
+df.dropna()
+
+- Fill Missing Values
+
+df.fillna(0)
+
+---
+
+### Sorting Data
+
+Sorting arranges data in ascending or descending order.
+
+df.sort_values("Age")
+
+---
+
+### GroupBy
+
+The GroupBy function groups rows having the same value and performs operations like sum, average, count, etc.
+
+df.groupby("Department")["Salary"].mean()
+
+---
+
+### Merge DataFrames
+
+Merge combines two DataFrames using a common column.
+
+pd.merge(df1, df2, on="ID")
+
+---
+
+### Saving Data
+
+Save the modified DataFrame into a CSV file.
+
+df.to_csv("output.csv", index=False)
+
+---
+
+### Advantages of Pandas
+
+- Fast and efficient data processing.
+- Easy handling of large datasets.
+- Simplifies data cleaning.
+- Supports powerful filtering and grouping.
+- Easy integration with NumPy and Matplotlib.
+- Reads and writes multiple file formats.
+- Suitable for Data Science and Machine Learning.
+
+---
+
+### Limitations of Pandas
+
+- Uses a large amount of memory for very large datasets.
+- Slower than some specialized big-data frameworks for extremely large datasets.
+- Mainly designed for structured/tabular data.
+
+---
