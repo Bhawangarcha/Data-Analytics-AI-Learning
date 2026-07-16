@@ -11,7 +11,9 @@ Load the student_marks.csv dataset using Pandas and display:
 
 ### Code: 
 import pandas as pd
+
 df = pd.read_csv("/content/student_data_converted.csv")
+
 print(df.head())
 print(df.tail())
 print(df.shape)
